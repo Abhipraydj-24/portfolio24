@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    cursor: url('./assests/arrow/mouse-cursor.png'), auto ;
+} */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.navbar ul li a {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+   margin-left: 20px;
+   margin-top: 5px;
+  
+   position: relative;
+  }
+  
+  .navbar ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .navbar ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  @media (max-width: 767px) {
+      .text-lg-center {
+          text-align: center !important;
+      }
+  }
+
+
+
+.hero-section{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+.contact-section {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    z-index: -1;
+}
+
+.left h1 {
+    font-size: 50px;
+
+}
+
+.left #SN {
+    color: #62d84e;
+}
+
+.left .skillsbadge {
+
+    background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+    width: 60%;
+    border-radius: 10px;
+}
+
+
+.img-hero {
+    width: 400px;
+    height: 400px;
+    background: -webkit-linear-gradient(45deg, #1e30f3 0%, #e21e80 100%);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 50%;
+
+
+    border: 10px solid white;
+    transition: all ease-in 0.4s;
+
+}
+ .img-hero:hover{
+    width: 450px;
+    height: 450px;
+    background: black;
+}
+
+.img-hero::before {
+    content: '';
+    width: 350px;
+    height: 200px;
+    padding: 30px 30px;
+    background: url(./assests/images/bars.png)no-repeat;
+    position: absolute;
+    bottom: 300px;
+    left: -80px;
+
+
+    z-index: 0;
+}
+
+.img-hero::after {
+    content: '';
+    width: 350px;
+    height: 200px;
+    padding: 30px 30px;
+    background: url(./assests/images/bars.png)no-repeat;
+    position: absolute;
+    top: 300px;
+    right: -80px;
+
+
+    z-index: 0;
+}
+
+.img-hero .img-person {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 5px solid white;
+    resize: horizontal 4px;
+    object-fit: cover;
+}
+
+
+
+
+/* ---------------- */
+
+
+.social-hero ul {
+    list-style: none;
+    padding-left: 0!important;
+  
+}
+
+.social-hero li {
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    transition: all ease-in-out 0.5s;
+}
+
+.social-hero li:hover {
+    background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%)!important;
+
+}
+
+
+.social-hero #fb {
+    background: #1877F2;
+}
+
+.social-hero #insta {
+    background: #5851DB;
+}
+
+.social-hero #git {
+    background: #6e5494;
+}
+
+.social-hero #linkedin {
+    background: #0072b1;
+}
+
+.social-hero li img {
+    width: 20px;
+    height: 20px;
+
+
+
+}
+
+
+.tech-stack {
+    height: 60px;
+    width: auto;
+
+
+
+}
+
+.tech-stack span img {
+    height: 30px;
+    width: 30px;
+    transition: all ease 0.2s;
+ 
+
+}
+.tech-stack span img:hover{
+    height: 40px;
+    width: 40px;
+
+
+
+}
+.tech-stack .tech-head {
+    border-right: 2px solid grey;
+    margin-right: 15px;
+    padding-right: 15px;
+
+}
+
+.left .hero-contact-btn {
+    font-size: 18px;
+}
+
+.left .hero-contact-btn .project-btn {
+    background: none;
+    border: 2px solid white;
+}
+
+.left .hero-contact-btn .project-btn:hover {
+    background: none;
+    border: 2px solid #5851DB;
+}
+
+
+
+
+/* border animation class */
+
+
+.border-animation {
+    overflow: hidden !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border-animation:before {
+    content: '';
+    position: absolute;
+    width: 430px;
+    height: 430px;
+    background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+    z-index: -1;
+    animation: animate 10s linear infinite;
+    border-radius: 80%;
+
+
+}
+
+.border-animation:after {
+    content: '';
+    position: relative;
+    inset: 5px;
+
+
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-360deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.custom-shape-divider-bottom-1692957066 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1692957066 svg {
+    position: relative;
+    display: block;
+    width: calc(157% + 1.3px);
+    height: 126px;
+}
+
+.custom-shape-divider-bottom-1692957066 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+
+
+/* work */
+
+
+
+:root{
+    --btn-btn--1:#b23c8a;
+    --btn-btn--2:rgb(146, 58, 117);
+    --text-noraml-color:#ffffff;
+    --card-behind-1:#6892d7;
+    --card-behind-2:#f15048;;
+    --card-behind-3:#5bb75b;
+    --card-behind-4:#fa8f55;
+}
+
+.banner-card-behind-1::before{
+    position: absolute;
+   content: "";
+   width: 200px;
+   height: 200px;
+   background: var(--card-behind-1) url(./assests/images/web\ development.gif) no-repeat;
+   background-size:100px 90px;
+   z-index: -1;
+   bottom: 90px;
+   left: 50px;
+  background-position-x: 50px;
+  background-position-y: 10px;
+   
+}
+.banner-card-behind-2,.banner-card-behind-4{
+    position: relative;
+    bottom:40px;
+}
+.banner-card-behind-2::before{
+    position: absolute;
+   content: "";
+  
+   width: 200px;
+   height: 200px;
+   background: var(--card-behind-2) url(./assests/images/bk_red.gif) no-repeat;
+   background-size:100px 80px;
+   z-index: -1;
+   bottom: 90px;
+   right: 50px;
+   background-position-x: 50px;
+   background-position-y: 10px;
+ 
+ 
+   
+}
+.banner-card-behind-3::before{
+    position: absolute;
+   content: "";
+   width: 200px;
+   height: 200px;
+   background: var(--card-behind-3) url(./assests/images/andoid_dev.gif) no-repeat;
+   background-size:100px 80px;
+   z-index: -1;
+   bottom: 90px;
+   left: 50px;
+   background-position-x: 50px;
+   background-position-y: 10px;
+  
+   
+}
+.banner-card-behind-4::before{
+    position: absolute;
+   content: "";
+   width: 200px;
+   height: 200px;
+   background: var(--card-behind-4) url(./assests/images/red.gif) no-repeat ;
+   background-size:100px 90px;
+   z-index: -1;
+   bottom: 70px;
+   right: 50px;
+   bottom: 90px;
+   background-position-x: 50px;
+   background-position-y: 10px;
+  
+   
+   
+}
+.banner-card{
+    background: var(--text-noraml-color);
+    position: relative;
+}
+h6{
+    font-weight: bold;
+}
+
+
+/* ----------- mobile Screens ----------- */
+
+@media only screen and (max-width:760px){
+
+  
+    .banner-card-behind-1::before{
+       
+    transform: translateX(50%);
+    width:175px;
+   
+    }
+    .banner-card-behind-2::before{
+        transform: translateX(-50%);
+        width:175px;
+    
+     }
+     .banner-card-behind-3::before{
+        transform: translateX(50%);
+        width:175px;
+     
+     }
+     .banner-card-behind-4::before{
+       
+        transform: translateX(-50%);
+        width:175px;
+    
+     }
+}
+
+
+.work .btn-work button{
+    padding: 1.2rem 3rem!important;
+    background: transparent;
+    border: 1px solid white;
+    border-radius:10px!important;
+    position: relative;
+    z-index: 5;
+}
+.work .btn-work button:hover{
+    background: transparent;
+    
+ border-color: #5851DB;
+   
+}
+
+
+
+/* contact */
+
+.Contact{
+    background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+}
+
+.contact-heading h1{
+    font-size: 3.5em;
+}
+
+
+
+
+
+.Contact .btn-contact button{
+    padding: 1.2rem 3rem!important;
+    background: transparent;
+    border: 1px solid white;
+    border-radius:10px!important;
+    position: relative;
+    z-index: 5;
+}
+.Contact .btn-contact button:hover{
+    background: transparent;
+ border-color: #0f1123d5;
+ 
+   
+}
+
+
+/* ------------------ Scroll Button Style ------------------- */
+
+.scroll-btn {
+    cursor: pointer;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+   
+    
+  }
+  
+  .scroll-btn img {
+    background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+    position: relative;
+    border-radius: 100%;
+    width: 55px;
+    height: 55px;
+    padding: 1rem 1rem;
+    box-shadow: 2px 2px 10px #0f1123d5;
+    
+     
+  }
+  .scroll-btn img:hover {
+    background:black;
+    border:0;
+  
+  }
+
+
+  .shapedividers_right{
+    overflow:hidden;
+    position:relative;
+    }
+    .shapedividers_right::before{ 
+    content:'';
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    
+    bottom: -0.1vw;
+    left: -0.1vw;
+    right: -0.1vw;
+    top: -0.1vw; 
+    background-size: 143px 130%;
+    background-position: 100% 50%;  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2.17 35.28" preserveAspectRatio="none"><path d="M1.67 0c-.55 3.07.41 9.27 0 16.14-.4 6.88-.58 13.75.1 19.14h.4V0z" fill="%230d0c0c"/><path d="M1.16 0c-.8 3.17.4 7.29.56 10.04C1.89 12.8.25 19.3.42 22.71c.16 3.43.84 4.65.86 7.05.03 2.4-.88 5.52-.88 5.52h1.77V0z" opacity=".5" fill="%230d0c0c"/><path d="M.31 0c.84 2.56.3 7.68.43 11.79.12 4.1.61 6.86.28 9.58-.33 2.73-1.18 5.61-1 8.61.19 3 .82 4.73.84 5.3h1.2V0z" opacity=".5" fill="%230d0c0c"/></svg>'); 
+    }
+
+ 
+
+
+
+
+/* contact form page*/
+
+.badge-card{
+    background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+    border-radius: 5px;
+    border: 1px solid white;
+ align-items: center;
+ height: 4rem; 
+} 
+
+
+.contact-head{
+    font-size: 40px;
+    
+ 
+}
+.contact-bg{
+background:white url(./assests/images/Wave.png)no-repeat ;
+background-size: cover;
+inset: 5px;
+
+
+
+
+   
+} 
+     
+
+.card{
+    width: 28rem;
+    height: 15rem;
+
+}
+
+.card-body:hover{
+    background: #1e30f3!important;
+}
