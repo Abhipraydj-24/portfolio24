@@ -66,7 +66,11 @@ a {
     position: relative;
     z-index: -1;
 }
-
+.skills-section{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
 .left h1 {
     font-size: 50px;
 
@@ -562,13 +566,35 @@ inset: 5px;
    
 } 
      
+    
 
 .card{
     width: 28rem;
     height: 15rem;
+  transition: all ease 1s;
+    cursor: pointer;
+}
+.card:hover{
+  transform: scale(1.2);
+  z-index: 10;
+  
+  
 
 }
 
-.card-body:hover{
-    background: #1e30f3!important;
+
+.badge{
+    background: transparent;
+    border:1px solid white;
+    margin:10px 20px;
+    position: relative;
+   
+}
+.badge:hover{
+    background: black;
+    color: white;
+}
+.badge img{
+    width: 30px;
+    height: 30px;
 }
