@@ -1,1 +1,15 @@
 -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+
+I hold a degree in Computer Engineering, encompassing a balanced blend of hardware and software disciplines. My coursework spanned digital systems, programming languages, data structures, and computer networks, nurturing strong analytical and problem-solving abilities. Through collaborative projects and practical labs, I gained hands-on experience and a deep appreciation for innovation in this dynamic field.
+
+
+I pursued Computer Science during my 11th and 12th grades, fostering a solid foundation in the principles of programming and technology. My studies encompassed fundamental concepts such as algorithms, data structures, and software development. This academic experience not only honed my coding skills but also ignited a passion for logical problem-solving. Engaging with diverse projects and coursework instilled in me a deep appreciation for the transformative potential of technology. My education in 11th and 12th grade Computer Science has been pivotal in shaping my understanding of the digital world and its endless possibilities.
+
+
+
+I completed my 10th-grade education (SSC) with distinction, demonstrating a strong academic foundation and dedication to learning. This period fostered essential skills and knowledge that serve as a solid base for my educational and professional journey.
+
+
+During my online virtual internship, I gained hands-on experience in developing a basic banking system, enhancing both front-end and back-end skills. I learned to host websites, manage databases, and bolster website security. This internship also provided insights into UI and database design, refining my design sensibilities and data management abilities.
+
+I adeptly gathered and managed data, creating vital reports. I designed, optimized, and maintained complex SQL scripts, elevating our data processes. My role involved fine-tuning SQL queries and ensuring data accuracy to preserve integrity. This streamlined approach enhanced report reliability, fostering confident decision-making within a precise data-driven environment.
